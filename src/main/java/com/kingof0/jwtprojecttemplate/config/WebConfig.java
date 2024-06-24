@@ -18,6 +18,8 @@ public class WebConfig {
     private final List<String> allowedOrigins = Arrays.asList(
             "http://92.44.163.3:3000",
             "https://92.44.163.3:3000",
+            "http://92.44.163.3:5173",
+            "https://92.44.163.3:5173",
             "http://localhost:3000",
             "https://localhost:3000",
             "http://localhost:5173",

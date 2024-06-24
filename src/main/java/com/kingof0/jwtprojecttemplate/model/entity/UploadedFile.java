@@ -30,4 +30,6 @@ public class UploadedFile {
     @Column(nullable = true)
     private String originalFileName;
 
+    private String url;
+
 }

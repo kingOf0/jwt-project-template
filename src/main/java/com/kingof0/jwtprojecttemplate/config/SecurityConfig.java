@@ -55,7 +55,7 @@ class SecurityConfig {
                             .requestMatchers(antMatcher("/swagger-resources/*")).permitAll() //swagger-ui'ya erişebilir
                             .requestMatchers(antMatcher("/v3/api-docs/**")).permitAll() //swagger-ui'ya erişebilir
  */
-                            .anyRequest().authenticated())
+                            .anyRequest().permitAll()) //todo: Auth
                     .build();
         } catch (Exception e) {
             e.printStackTrace();

@@ -72,6 +72,7 @@ public class FileStorageService {
         uploadedFile.setOriginalFileName(file.getOriginalFilename());
         uploadedFile.setPath(unsavedFile.getPath());
         uploadedFile.setTitle(unsavedFile.getTitle());
+        uploadedFile.setUrl("/api/file/" + uploadedFile.getPath() + "/" + uploadedFile.getId());
         uploadedFile.setExtension(Utils.getExtension(file));
 
         try {
